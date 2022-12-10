@@ -15,8 +15,7 @@ const Main = ({ searchTerm, setSearchTerm, handleKeyDown, movies, series }) => {
                   {
                       movies?.length > 0 ?
                           (
-
-
+                            
                               movies.map((i) => (
                                   <MovieCard Poster={i.Poster} Title={i.Title} />
                               ))
@@ -24,7 +23,7 @@ const Main = ({ searchTerm, setSearchTerm, handleKeyDown, movies, series }) => {
                           )
                           :
                           (
-                            <MovieCard />
+                            <MovieCard Title={"No results found"}/>
                           )
                   }
                   
@@ -48,7 +47,7 @@ const Main = ({ searchTerm, setSearchTerm, handleKeyDown, movies, series }) => {
                           )
                           :
                           (
-                            <MovieCard />
+                            <MovieCard Title={"No results found"}/>
                           )
                   }
             </div>
