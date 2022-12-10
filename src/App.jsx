@@ -5,7 +5,7 @@ import  { useState, useEffect } from 'react';
 
 function App() {
 
-  const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=ff87bb53';
+  const API_URL = 'https://www.omdbapi.com/?i=tt3896198&apikey=ff87bb53';
 
   const [movies, setMovies] = useState([]);
   const [series, setSeries] = useState([]);
