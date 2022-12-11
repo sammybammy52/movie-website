@@ -40,7 +40,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app flex justify-center">
+    <div className="app mx-auto max-w-[1440px]">
       <div>
       <Navbar/>
       <Hero/>
